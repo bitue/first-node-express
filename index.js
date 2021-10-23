@@ -26,8 +26,8 @@ app.post('/ashik', (req , res)=> {
     const newUser = req.body
     newUser.id = user.length
     user.push(newUser)
-    res.send('inside post ')
-    console.log(user)
+    
+    res.json(newUser)
 })
 
 app.get('/ashik', (req, res)=> {
